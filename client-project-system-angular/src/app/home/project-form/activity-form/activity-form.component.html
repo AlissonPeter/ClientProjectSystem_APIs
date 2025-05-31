@@ -1,0 +1,65 @@
+<div *ngIf="showTableStatus" class="project-form">
+    <h3>Selecione um status:</h3>
+    <app-status-table-selector (statusSelected)="handleStatusSelected($event)" />
+    <button (click)="showTableStatus = false">Voltar</button>
+</div>
+
+<div *ngIf="!showTableStatus" class="project-form">
+    <h2>Atividade</h2>
+    <form>
+        <div class="input-container">
+            <label for="desc">Descrição:</label>
+            <input id="input-projectDesc" type="text" [(ngModel)]="activity.description" name="description" />
+        </div>
+
+        <div class="input-container">
+            <label>Status:</label>
+            <input id="input-statusId" type="number" min="0" [(ngModel)]="activity.status.id" name="statusId"
+                (keydown)="blockSigns($event)" (blur)="loadStatus()" />
+            <button id="input-search" (click)="toggleTableStatus()" type="button"
+                [ngStyle]="{'background-image': 'url(' + searchIcon + ')'}"></button>
+            <input id="input-statusDesc" type="text" [(ngModel)]="activity.status.description" name="statusDesc"
+                disabled />
+        </div>
+
+        <div>
+            <button type="button" (click)="clearForm()">Limpar</button>
+        </div>
+
+        <div class="button-group">
+            <button type="button" (click)="submitForm()">Enviar</button>
+            <button type="button" (click)="backProject()">Voltar</button>
+        </div>
+    </form>
+
+    <div *ngIf="submitted">
+        <h3>Enviado</h3>
+        <p *ngIf="response"><strong>Resposta Servidor:</strong> {{ response }}</p>
+    </div>
+
+    <div class="table-activities">
+        <h3>Cadastrados</h3>
+        <table id="tableProjects">
+            <thead>
+                <tr>
+                    <th class="cursor">Descrição</th>
+                    <th class="cursor">Status</th>
+                    <th (click)="deleteActivitiesSelected()" class="removeProject"
+                        [ngStyle]="{'background-image': 'url(' + removeIcon + ')'}"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let activity of localActivities(); let i = index">
+                    <td (click)="setActivity(activity, i)">{{ activity.description }}</td>
+                    <td (click)="setActivity(activity, i)">
+                        {{ activity.status.id }} - {{ activity.status.description }}
+                    </td>
+                    <td>
+                        <input class="checkboxRemove" type="checkbox" (change)="toggleSelection($event, i)"
+                            [checked]="activitiesChecked().includes(i)" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

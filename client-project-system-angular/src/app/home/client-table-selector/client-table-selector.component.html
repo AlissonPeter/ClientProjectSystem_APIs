@@ -1,0 +1,20 @@
+<div class="clients-form">
+  <h3>Cadastrados</h3>
+  <table id="tableClients">
+    <thead>
+      <tr>
+        <th class="cursor">ID</th>
+        <th class="cursor">Cliente</th>
+        <th [style.backgroundImage]="'url(' + removeIcon + ')'" class="removeProject" (click)="deleteClientsSelected()">
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let client of clients">
+        <td *ngIf="client.id" (click)="setClient(client.id, client.name)">{{ client.id }}</td>
+        <td *ngIf="client.id" (click)="setClient(client.id, client.name)">{{ client.name }}</td>
+        <td><input type="checkbox" class="checkboxRemove" /></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
