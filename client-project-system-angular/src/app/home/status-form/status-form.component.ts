@@ -56,6 +56,7 @@ export class StatusFormComponent {
       this.tableStatus.getStatus();
       this.clearForm();
       this.submitted = true;
+      this.response = '';
 
       setTimeout(() => {
         this.submitted = false;

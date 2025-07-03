@@ -97,7 +97,8 @@ export class ProjectFormComponent implements OnInit {
     event.preventDefault();
     this.submitted = true;
     try {
-      if (!this.project.id) {
+      console.log(JSON.stringify(this.project));
+      if (this.project.id == null || this.project.id == "") {
         const created: any = await firstValueFrom(this.http.post(`http://localhost:8081/projects`, this.project));
         this.projects.push(created);
       } else {
@@ -108,6 +109,7 @@ export class ProjectFormComponent implements OnInit {
       this.clearForm();
     } catch (error) {
       this.response = 'Erro na requisição';
+      console.error('Erro ao salvar o projeto', error);
     }
 
     setTimeout(() => {
@@ -130,7 +132,7 @@ export class ProjectFormComponent implements OnInit {
     const ids = Array.from(checkboxes).map(cb => cb.closest('tr')!.cells[0].textContent!);
     for (const id of ids) {
       await await firstValueFrom(this.http.delete(`http://localhost:8081/projects/${id}`));
-      this.projects = this.projects.filter(p => p.id !== id);
+      this.projects = this.projects.filter(p => p.id != id);
     }
   }
 

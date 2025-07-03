@@ -18,8 +18,7 @@
   </form>
 
   <div *ngIf="submitted">
-    <h3>Enviado</h3>
-    <p><strong>Descrição:</strong> {{ status.description }}</p>
+    <h3>Enviado com sucesso!</h3>
     <p *ngIf="response"><strong>Resposta Servidor:</strong> {{ response }}</p>
   </div>
   <app-status-table-selector (statusSelected)="handleSelected($event)"></app-status-table-selector>

@@ -45,6 +45,7 @@ export class ClientFormComponent {
       this.tableClients.getClients();
       this.clearForm();
       this.submitted = true;
+      this.response = '';
 
       // Atualiza a lista de clientes
       setTimeout(() => {

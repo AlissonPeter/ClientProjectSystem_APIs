@@ -1,3 +1,4 @@
+import { Project } from "./Project";
 import { Status } from "./Status";
 
 export class Activity {
