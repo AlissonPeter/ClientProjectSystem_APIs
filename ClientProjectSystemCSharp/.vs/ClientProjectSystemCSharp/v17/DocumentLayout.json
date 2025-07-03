@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Workspace\\ClientProjectSystemCSharp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemCSharp.csproj|c:\\workspace\\clientprojectsystemcsharp\\clientprojectsystemcsharp\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemCSharp.csproj|solutionrelative:clientprojectsystemcsharp\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemCSharp.csproj|c:\\workspace\\clientprojectsystemcsharp\\clientprojectsystemcsharp\\repositories\\projectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemCSharp.csproj|solutionrelative:clientprojectsystemcsharp\\repositories\\projectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemCSharp.csproj|c:\\workspace\\clientprojectsystemcsharp\\clientprojectsystemcsharp\\services\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemCSharp.csproj|solutionrelative:clientprojectsystemcsharp\\services\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemCSharp.csproj|c:\\workspace\\clientprojectsystemcsharp\\clientprojectsystemcsharp\\mappings\\projectmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemCSharp.csproj|solutionrelative:clientprojectsystemcsharp\\mappings\\projectmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemCSharp.csproj|c:\\workspace\\clientprojectsystemcsharp\\clientprojectsystemcsharp\\mappings\\activitymap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemCSharp.csproj|solutionrelative:clientprojectsystemcsharp\\mappings\\activitymap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 222,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 248,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProjectService.cs",
+              "DocumentMoniker": "C:\\Workspace\\ClientProjectSystemCSharp\\ClientProjectSystemCSharp\\Services\\ProjectService.cs",
+              "RelativeDocumentMoniker": "ClientProjectSystemCSharp\\Services\\ProjectService.cs",
+              "ToolTip": "C:\\Workspace\\ClientProjectSystemCSharp\\ClientProjectSystemCSharp\\Services\\ProjectService.cs",
+              "RelativeToolTip": "ClientProjectSystemCSharp\\Services\\ProjectService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAwwB8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T02:11:14.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProjectRepository.cs",
+              "DocumentMoniker": "C:\\Workspace\\ClientProjectSystemCSharp\\ClientProjectSystemCSharp\\Repositories\\ProjectRepository.cs",
+              "RelativeDocumentMoniker": "ClientProjectSystemCSharp\\Repositories\\ProjectRepository.cs",
+              "ToolTip": "C:\\Workspace\\ClientProjectSystemCSharp\\ClientProjectSystemCSharp\\Repositories\\ProjectRepository.cs",
+              "RelativeToolTip": "ClientProjectSystemCSharp\\Repositories\\ProjectRepository.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA/wBoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T02:10:03.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ActivityMap.cs",
+              "DocumentMoniker": "C:\\Workspace\\ClientProjectSystemCSharp\\ClientProjectSystemCSharp\\Mappings\\ActivityMap.cs",
+              "RelativeDocumentMoniker": "ClientProjectSystemCSharp\\Mappings\\ActivityMap.cs",
+              "ToolTip": "C:\\Workspace\\ClientProjectSystemCSharp\\ClientProjectSystemCSharp\\Mappings\\ActivityMap.cs",
+              "RelativeToolTip": "ClientProjectSystemCSharp\\Mappings\\ActivityMap.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T01:25:54.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProjectMap.cs",
+              "DocumentMoniker": "C:\\Workspace\\ClientProjectSystemCSharp\\ClientProjectSystemCSharp\\Mappings\\ProjectMap.cs",
+              "RelativeDocumentMoniker": "ClientProjectSystemCSharp\\Mappings\\ProjectMap.cs",
+              "ToolTip": "C:\\Workspace\\ClientProjectSystemCSharp\\ClientProjectSystemCSharp\\Mappings\\ProjectMap.cs",
+              "RelativeToolTip": "ClientProjectSystemCSharp\\Mappings\\ProjectMap.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAmwBwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T01:23:55.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "C:\\Workspace\\ClientProjectSystemCSharp\\ClientProjectSystemCSharp\\Controllers\\ProjectController.cs",
+              "RelativeDocumentMoniker": "ClientProjectSystemCSharp\\Controllers\\ProjectController.cs",
+              "ToolTip": "C:\\Workspace\\ClientProjectSystemCSharp\\ClientProjectSystemCSharp\\Controllers\\ProjectController.cs",
+              "RelativeToolTip": "ClientProjectSystemCSharp\\Controllers\\ProjectController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T01:16:00.734Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

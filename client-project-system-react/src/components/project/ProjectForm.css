@@ -1,0 +1,162 @@
+.project-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.project-form h2, .project-form h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  margin-bottom: 0px;
+}
+
+.input-container label {
+  width: 80px; /* Largura fixa para alinhar os labels */
+  text-align: right; /* Alinha o texto do label à direita */
+  flex-shrink: 0; /* Evita que o label encolha */
+  color: #555;
+  margin-right: -4px;
+}
+
+.input-container input[type="text"],
+.input-container input[type="number"] {
+  flex-grow: 1; /* Permite que os inputs de texto/número ocupem o espaço restante */
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+/* Tamanhos específicos para inputs */
+#input-clientId, 
+#input-statusId {
+  width: 50px; /* Ajuste se necessário */
+  text-align: center;
+}
+
+#input-clientName,
+#input-statusDesc {
+  width: 300px; /* Ajuste se necessário */
+  flex-grow: 0; /* Não permite que estes inputs cresçam */
+}
+
+#input-projectDesc {
+  flex-grow: 1; /* Permite que o input de descrição ocupe o espaço restante */
+  width: 50px; /* Remove largura fixa para flex-grow funcionar */
+}
+
+.input-margin-top {
+  margin-top: -9px;
+}
+
+#input-search {
+  background-size: 48px 38px; /* Tamanho do ícone de busca */
+  padding: 15px 15px;
+  background-color: #42b983;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0; /* Evita que o botão encolha */
+  margin-right: -4px;
+  margin-left: -4px;
+}
+
+
+/* Estilos da tabela (podem ser movidos para um arquivo comum se desejado) */
+.table-container { /* Classe para o container da tabela */
+  max-width: 600px; /* Largura máxima da tabela */
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  background-color: #fcfcfc;
+  text-align: center;
+}
+
+.table-container h3 {
+  color: #333;
+  margin-bottom: 25px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  border-radius: 8px;
+  overflow: hidden; 
+}
+
+th, td {
+  padding: 12px 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #555;
+  cursor: pointer; 
+}
+
+td {
+  background-color: #fff;
+  color: #444;
+}
+
+tr:nth-child(even) td {
+  background-color: #f9f9f9;
+}
+
+tr:hover td {
+  background-color: #eef;
+  cursor: pointer; 
+}
+
+.cursor-auto { /* Para células sem eventos de clique */
+  cursor: auto;
+}
+
+.remove-icon-cell { /* Estilo para o TH que contém o ícone de remover */
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20px; /* Altura do ícone */
+  width: 20px; /* Largura do ícone */
+  cursor: pointer;
+  vertical-align: middle;
+  background-color: transparent; 
+}
+
+.checkbox-remove {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.form-message {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.form-message h3 {
+  color: #4CAF50; /* Verde para sucesso */
+}
+
+.form-message p {
+  color: #D32F2F; /* Vermelho para erro */
+  font-weight: bold;
+}
