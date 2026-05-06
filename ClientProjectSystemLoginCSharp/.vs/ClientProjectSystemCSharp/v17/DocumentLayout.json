@@ -1,0 +1,224 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|c:\\workspace\\clientprojectsystemlogincsharp\\clientprojectsystemcsharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|solutionrelative:clientprojectsystemcsharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|c:\\workspace\\clientprojectsystemlogincsharp\\clientprojectsystemcsharp\\data\\nhibernatehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|solutionrelative:clientprojectsystemcsharp\\data\\nhibernatehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|c:\\workspace\\clientprojectsystemlogincsharp\\clientprojectsystemcsharp\\mappings\\activitymap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|solutionrelative:clientprojectsystemcsharp\\mappings\\activitymap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|c:\\workspace\\clientprojectsystemlogincsharp\\clientprojectsystemcsharp\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|solutionrelative:clientprojectsystemcsharp\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|c:\\workspace\\clientprojectsystemlogincsharp\\clientprojectsystemcsharp\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|solutionrelative:clientprojectsystemcsharp\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|c:\\workspace\\clientprojectsystemlogincsharp\\clientprojectsystemcsharp\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|solutionrelative:clientprojectsystemcsharp\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|c:\\workspace\\clientprojectsystemlogincsharp\\clientprojectsystemcsharp\\repositories\\statusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|solutionrelative:clientprojectsystemcsharp\\repositories\\statusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|c:\\workspace\\clientprojectsystemlogincsharp\\clientprojectsystemcsharp\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|solutionrelative:clientprojectsystemcsharp\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|c:\\workspace\\clientprojectsystemlogincsharp\\clientprojectsystemcsharp\\repositories\\iclientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|solutionrelative:clientprojectsystemcsharp\\repositories\\iclientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|c:\\workspace\\clientprojectsystemlogincsharp\\clientprojectsystemcsharp\\repositories\\activityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|solutionrelative:clientprojectsystemcsharp\\repositories\\activityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|c:\\workspace\\clientprojectsystemlogincsharp\\clientprojectsystemcsharp\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|solutionrelative:clientprojectsystemcsharp\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|c:\\workspace\\clientprojectsystemlogincsharp\\clientprojectsystemcsharp\\models\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|solutionrelative:clientprojectsystemcsharp\\models\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 222,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 326,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Program.cs",
+              "RelativeDocumentMoniker": "ClientProjectSystemCSharp\\Program.cs",
+              "ToolTip": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Program.cs",
+              "RelativeToolTip": "ClientProjectSystemCSharp\\Program.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T22:15:06.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ActivityMap.cs",
+              "DocumentMoniker": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Mappings\\ActivityMap.cs",
+              "RelativeDocumentMoniker": "ClientProjectSystemCSharp\\Mappings\\ActivityMap.cs",
+              "ToolTip": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Mappings\\ActivityMap.cs",
+              "RelativeToolTip": "ClientProjectSystemCSharp\\Mappings\\ActivityMap.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T22:07:35.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NHibernateHelper.cs",
+              "DocumentMoniker": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Data\\NHibernateHelper.cs",
+              "RelativeDocumentMoniker": "ClientProjectSystemCSharp\\Data\\NHibernateHelper.cs",
+              "ToolTip": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Data\\NHibernateHelper.cs",
+              "RelativeToolTip": "ClientProjectSystemCSharp\\Data\\NHibernateHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T22:07:21.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Controllers\\ProjectController.cs",
+              "RelativeDocumentMoniker": "ClientProjectSystemCSharp\\Controllers\\ProjectController.cs",
+              "ToolTip": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Controllers\\ProjectController.cs",
+              "RelativeToolTip": "ClientProjectSystemCSharp\\Controllers\\ProjectController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwAsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T21:41:10.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "ClientProjectSystemCSharp\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "ClientProjectSystemCSharp\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T21:41:04.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClientController.cs",
+              "DocumentMoniker": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Controllers\\ClientController.cs",
+              "RelativeDocumentMoniker": "ClientProjectSystemCSharp\\Controllers\\ClientController.cs",
+              "ToolTip": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Controllers\\ClientController.cs",
+              "RelativeToolTip": "ClientProjectSystemCSharp\\Controllers\\ClientController.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAswBgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T21:40:31.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StatusRepository.cs",
+              "DocumentMoniker": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Repositories\\StatusRepository.cs",
+              "RelativeDocumentMoniker": "ClientProjectSystemCSharp\\Repositories\\StatusRepository.cs",
+              "ToolTip": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Repositories\\StatusRepository.cs",
+              "RelativeToolTip": "ClientProjectSystemCSharp\\Repositories\\StatusRepository.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T21:40:23.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IClientRepository.cs",
+              "DocumentMoniker": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Repositories\\IClientRepository.cs",
+              "RelativeDocumentMoniker": "ClientProjectSystemCSharp\\Repositories\\IClientRepository.cs",
+              "ToolTip": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Repositories\\IClientRepository.cs",
+              "RelativeToolTip": "ClientProjectSystemCSharp\\Repositories\\IClientRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T21:40:00.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ClientRepository.cs",
+              "DocumentMoniker": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Repositories\\ClientRepository.cs",
+              "RelativeDocumentMoniker": "ClientProjectSystemCSharp\\Repositories\\ClientRepository.cs",
+              "ToolTip": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Repositories\\ClientRepository.cs",
+              "RelativeToolTip": "ClientProjectSystemCSharp\\Repositories\\ClientRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T21:38:03.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ActivityRepository.cs",
+              "DocumentMoniker": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Repositories\\ActivityRepository.cs",
+              "RelativeDocumentMoniker": "ClientProjectSystemCSharp\\Repositories\\ActivityRepository.cs",
+              "ToolTip": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Repositories\\ActivityRepository.cs",
+              "RelativeToolTip": "ClientProjectSystemCSharp\\Repositories\\ActivityRepository.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T21:37:46.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "ClientProjectSystemCSharp\\Models\\Client.cs",
+              "ToolTip": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Models\\Client.cs",
+              "RelativeToolTip": "ClientProjectSystemCSharp\\Models\\Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T21:37:37.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Activity.cs",
+              "DocumentMoniker": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Models\\Activity.cs",
+              "RelativeDocumentMoniker": "ClientProjectSystemCSharp\\Models\\Activity.cs",
+              "ToolTip": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Models\\Activity.cs",
+              "RelativeToolTip": "ClientProjectSystemCSharp\\Models\\Activity.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T21:37:01.893Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

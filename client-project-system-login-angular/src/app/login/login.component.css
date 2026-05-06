@@ -1,0 +1,59 @@
+.client-form {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .client-form div {
+    margin-bottom: 15px;
+    display: flex; /* Torna o contêiner flexível */
+    align-items: center; /* Alinha verticalmente no centro */
+    gap: 5px; /* Adiciona um espaço entre label e input */
+  }
+  .client-form label {
+     flex-shrink: 0; /* Impede que o label diminua */
+    width: 80px; /* Mantém a largura fixa para alinhamento */
+    text-align: right;
+  }
+  .input-container label {
+   width: 80px;
+    /* Define uma largura fixa para alinhar */
+    text-align: right;
+    /* Garante que o texto fique alinhado à direita */
+}
+  .client-form input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    flex-grow: 1; 
+  }
+  .client-form button {
+    padding: 10px 20px;
+    background-color: #42b983;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .button-group {
+    display: flex;
+    gap: 10px; /* define o espaçamento automático entre os botões */
+    justify-content: center; /* Centraliza horizontalmente */
+  }
+  .client-form button:hover {
+    background-color: #359a72;
+  }
+  #title {
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: top center; 
+  height: 106px; 
+  width: 400px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}

@@ -1,0 +1,181 @@
+table {
+    width: 100%; /* Define a largura da tabela para preencher o container */
+  border-collapse: collapse; /* Remove espaçamento entre as bordas das células */
+  margin-top: 15px; /* Espaço acima da tabela */
+  border-radius: 0px; /* Cantos arredondados na tabela */
+  overflow: hidden; /* Garante que os cantos arredondados sejam visíveis */
+}
+
+.select-narrow {
+    width: 18px;
+    padding: 2px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    /* REMOVE A FLECHA PADRÃO */
+    -webkit-appearance: none;  /* Chrome, Safari, Edge */
+    -moz-appearance: none;     /* Firefox */
+    appearance: none;          /* Padrão moderno */
+
+    /* Remove o padding extra que o IE/Edge às vezes coloca */
+    background-image: none;
+}
+
+/* Opcional: Centralizar os três pontos no IE */
+.select-narrow::-ms-expand {
+    display: none;
+}
+
+/* Opcional: Efeito ao passar o mouse */
+.select-narrow:hover {
+    border-color: #888;
+    background-color: #eee;
+}
+
+/* Estilo para as opções (o navegador expande a largura automaticamente ao abrir) */
+.select-narrow option {
+    width: auto;
+    text-align: left;
+}
+
+.removeProject {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10px;
+    width: 10px;
+}
+
+.input-container input,
+.input-container button {
+    margin: 0;
+}
+
+.column {
+    width: 200px;
+    /* Largura fixa para cada coluna */
+    padding: 10px;
+    background-color: #42b983;
+}
+
+.cursor {
+    cursor: auto;
+}
+
+th,
+td {
+    padding: 10px;
+    cursor: pointer;
+     background-color: rgb(220, 243, 202);
+  border: 1px solid black;
+  text-align: left; /* Alinha o texto à esquerda por padrão */
+}
+
+th {
+  background-color: #aec7af; /* Fundo mais claro para o cabeçalho */
+  font-weight: bold;
+  color: #555;
+  cursor: pointer; /* Indica que colunas são clicáveis (se houver ordenação) */
+}
+
+tr:hover td { /* Efeito hover nas linhas */
+  background-color: #eef;
+  cursor: pointer; /* Cursor de ponteiro para indicar clicável */
+}
+.button-group {
+    display: flex;
+    gap: 10px;
+    /* define o espaçamento automático entre os botões */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+}
+
+.project-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.project-form div {
+    margin-bottom: 15px;
+}
+
+.project-form label {
+    margin-bottom: 5px;
+    display: block;
+    justify-content: flex-end;
+    /* Alinha tudo à direita */
+}
+
+/*.project-form input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }*/
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Alinha os itens verticalmente */
+    gap: 5px;
+    /* Define um pequeno espaço entre os elementos */
+}
+
+.input-container label {
+    width: 80px;
+    /* Define uma largura fixa para alinhar */
+    text-align: right;
+    /* Garante que o texto fique alinhado à direita */
+}
+
+#input-clientId,
+#input-statusId {
+    width: 50px;
+    /* Garante um tamanho mínimo */
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+#input-statusDesc {
+    width: 150px;
+    height: 15px;
+}
+
+#input-clientName {
+    width: 150px;
+    height: 15px;
+}
+
+#input-projectDesc {
+    width: 245px;
+    height: 15px;
+}
+
+#input-search {
+    padding: 10px 10px;
+    background-size: 20px 20px;
+    background-color: #42b983;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.project-form button {
+    padding: 10px 20px;
+    background-color: #42b983;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.project-form button:hover {
+    background-color: #359a72;
+}

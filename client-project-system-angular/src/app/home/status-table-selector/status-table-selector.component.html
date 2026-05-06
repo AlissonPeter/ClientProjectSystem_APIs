@@ -1,0 +1,22 @@
+<div class="status-form">
+    <h3>Cadastrados</h3>
+    <table id="tableStatus">
+      <thead>
+        <tr>
+              <th class="cursor">ID</th>
+              <th class="cursor">Descrição</th>
+              <th class="cursor">Tipo</th>
+              <th (click)="deleteStatusSelected()" [style.backgroundImage]="'url(' + removeIcon + ')'"
+              class="removeProject"></th>
+            </tr>
+          </thead>
+          <tbody>
+      <tr *ngFor="let status of statusList">
+        <td *ngIf="status.id" (click)="setStatus(status.id, status.description, status.kind)"> {{ status.id }}</td>
+        <td *ngIf="status.id" (click)="setStatus(status.id, status.description, status.kind)"> {{ status.description }}</td>
+        <td *ngIf="status.id" (click)="setStatus(status.id, status.description, status.kind)"> {{ status.kind + " - " + getKindDescription(status.kind) }}</td>
+        <td ><input type="checkbox" class="checkboxRemove"></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>

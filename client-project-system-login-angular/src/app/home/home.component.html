@@ -1,0 +1,18 @@
+<div id="app">
+  <h3 id="title" [ngStyle]="{ backgroundImage: 'url(' + titleImage + ')' }"></h3>
+
+  <div>
+    <button (click)="logout()">Logout</button>
+  </div>
+  <div>
+    <button (click)="setCurrentForm(Forms.CLIENT)">Cliente</button>
+    <button (click)="setCurrentForm(Forms.PROJECT)">Projeto</button>
+    <button (click)="setCurrentForm(Forms.STATUS)">Status</button>
+  </div>
+
+  <ng-container [ngSwitch]="currentForm">
+    <app-client-form *ngSwitchCase="Forms.CLIENT"></app-client-form>
+    <app-project-form *ngSwitchCase="Forms.PROJECT"></app-project-form>
+    <app-status-form *ngSwitchCase="Forms.STATUS"></app-status-form>
+  </ng-container>
+</div>

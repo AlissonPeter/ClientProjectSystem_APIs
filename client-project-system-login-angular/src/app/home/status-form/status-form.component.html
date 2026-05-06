@@ -1,0 +1,25 @@
+<div class="status-form">
+  <h2>Status</h2>
+  <form (ngSubmit)="submitForm()">
+    <div>
+      <label for="name">Descrição:</label>
+      <input type="text" [(ngModel)]="status.description" id="input-statusDesc" name="description" />
+      <label for="name">Tipo:</label>
+      <select [(ngModel)]="status.kind" name="kind">
+        <option *ngFor="let kind of kinds" [value]="kind.id">
+          {{ kind.description }}
+        </option>
+      </select>
+    </div>
+    <div class="button-group">
+      <button type="submit">Enviar</button>
+      <button type="button" (click)="clearForm()">Limpar</button>
+    </div>
+  </form>
+
+  <div *ngIf="submitted">
+    <h3>Enviado com sucesso!</h3>
+    <p *ngIf="response"><strong>Resposta Servidor:</strong> {{ response }}</p>
+  </div>
+  <app-status-table-selector (statusSelected)="handleSelected($event)"></app-status-table-selector>
+</div>

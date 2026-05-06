@@ -1,0 +1,25 @@
+<h3 id="title" [ngStyle]="{ backgroundImage: 'url(' + titleImage + ')' }"></h3>
+<div class="client-form">
+    <h2>Login de Acesso</h2>
+  
+    <form (ngSubmit)="submitForm()">
+      <div>
+        <label for="name">Usuário:</label>
+        <input type="text" [(ngModel)]="login.username" name="username" id="username" />
+    </div>
+    <div>
+        <label for="name">Senha:</label>
+        <input type="text" [(ngModel)]="login.password" name="password" id="password" />
+     </div>
+    <div class="button-group">
+        <button type="submit">Login</button>
+      </div>
+    </form>
+  
+    <div *ngIf="submitted">
+      <h3>Login feito com sucesso!</h3>
+      <p *ngIf="response"><strong>Resposta Servidor:</strong> {{ response }}</p>
+    </div>
+  
+  </div>
+  

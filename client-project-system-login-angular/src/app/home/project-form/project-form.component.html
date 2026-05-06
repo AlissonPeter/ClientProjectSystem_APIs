@@ -1,0 +1,111 @@
+<!-- Tabela de Clientes -->
+<div *ngIf="showTableClients" class="project-form">
+    <h3>Selecione um cliente:</h3>
+    <app-client-table-selector (clientSelected)="handleClientSelected($event)" />
+    <button (click)="showTableClients = false">Voltar</button>
+</div>
+
+<!-- Tabela de Status -->
+<div *ngIf="showTableStatus" class="project-form">
+    <h3>Selecione um status:</h3>
+    <app-status-table-selector (statusSelected)="handleStatusSelected($event)" />
+    <button (click)="showTableStatus = false">Voltar</button>
+</div>
+
+<!-- Atividades -->
+<div *ngIf="showActivities" class="project-form">
+    <app-activity-form
+      [activities]="project.activities"
+      (activitiesChange)="updateActivities($event)"
+    />
+  </div>
+
+<!-- Formulário Principal -->
+<div *ngIf="!showTableClients && !showTableStatus && !showActivities" class="project-form">
+    <h2>Projeto</h2>
+    <form>
+        <!-- Descrição -->
+        <div class="input-container">
+            <label for="input-projectDesc">Descrição:</label>
+            <input type="text" [(ngModel)]="project.description" name="description" id="input-projectDesc" />
+        </div>
+
+        <!-- Cliente -->
+        <div class="input-container">
+            <label for="input-clientId">Cliente:</label>
+            <input type="number" id="input-clientId" name="clientId" [(ngModel)]="project.client.id"
+                (keydown)="blockSigns($event)" (blur)="loadClient()" min="0" />
+            <button type="button" [ngStyle]="{ backgroundImage: 'url(' + searchIcon + ')' }" id="input-search"
+                (click)="toggleTableClients()">
+            </button>
+            <input type="text" [(ngModel)]="project.client.name" name="clientName" id="input-clientName" disabled />
+        </div>
+
+        <!-- Status -->
+        <div class="input-container">
+            <label for="input-statusId">Status:</label>
+            <input type="number" id="input-statusId" name="statusId" [(ngModel)]="project.status.id"
+                (keydown)="blockSigns($event)" (blur)="loadStatus()" min="0" />
+            <button type="button" [ngStyle]="{ backgroundImage: 'url(' + searchIcon + ')' }" id="input-search"
+                (click)="toggleTableStatus()">
+            </button>
+            <input type="text" [(ngModel)]="project.status.description" name="statusDesc" id="input-statusDesc"
+                disabled />
+        </div>
+
+        <!-- Atividades -->
+        <div>
+            <button type="button" (click)="showActivities = true">Atividades</button>
+        </div>
+
+        <!-- Botões de ação -->
+        <div class="button-group">
+            <button type="submit" (click)="submitForm($event)">Enviar</button>
+            <button type="button" (click)="clearForm()">Limpar</button>
+        </div>
+    </form>
+
+    <!-- Mensagem de Envio -->
+    <div *ngIf="submitted">
+        <h3 *ngIf="!response">Enviado com sucesso!</h3>
+        <p *ngIf="response"><strong>Resposta Servidor:</strong> {{ response }}</p>
+    </div>
+
+    <!-- Tabela de Projetos Cadastrados -->
+    <div class="project-form">
+        <h3>Cadastrados</h3>
+        <table id="tableProjects">
+            <thead>
+                <tr>
+                    <th class="cursor">ID</th>
+                    <th class="cursor">Projeto</th>
+                    <th class="cursor">Cliente</th>
+                    <th class="cursor">Status</th>
+                    <th>
+                        <select [(ngModel)]="actionSelected" (change)="onSelectAction()" class="select-narrow">
+                            <option [ngValue]="null" disabled selected>&#9662;</option>
+                            <option *ngFor="let option of actionTableList" [ngValue]="option.id" >
+                                {{ option.description }}
+                            </option>
+                        </select>
+                    </th>
+                    <!--<th (click)="deleteProjectsSelected()" [ngStyle]="{ backgroundImage: 'url(' + removeIcon + ')' }"
+                        class="removeProject"></th>-->
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let project of projects">
+                    <td (click)="setProject(project)">{{ project.id }}</td>
+                    <td (click)="setProject(project)">{{ project.description }}</td>
+                    <td (click)="setProject(project)">
+                        {{ project.client.id }} - {{ project.client.name }}
+                    </td>
+                    <td (click)="setProject(project)">
+                        {{ project.status.id }} - {{ project.status.description }}
+                    </td>
+                    <td><input type="checkbox" class="checkboxRemove" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

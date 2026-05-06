@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|c:\\workspace\\clientprojectsystemlogincsharp\\clientprojectsystemcsharp\\repositories\\activityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|solutionrelative:clientprojectsystemcsharp\\repositories\\activityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|c:\\workspace\\clientprojectsystemlogincsharp\\clientprojectsystemcsharp\\controllers\\activitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|solutionrelative:clientprojectsystemcsharp\\controllers\\activitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|c:\\workspace\\clientprojectsystemlogincsharp\\clientprojectsystemcsharp\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|solutionrelative:clientprojectsystemcsharp\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|c:\\workspace\\clientprojectsystemlogincsharp\\clientprojectsystemcsharp\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|solutionrelative:clientprojectsystemcsharp\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|c:\\workspace\\clientprojectsystemlogincsharp\\clientprojectsystemcsharp\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|solutionrelative:clientprojectsystemcsharp\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|c:\\workspace\\clientprojectsystemlogincsharp\\clientprojectsystemcsharp\\repositories\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|solutionrelative:clientprojectsystemcsharp\\repositories\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|c:\\workspace\\clientprojectsystemlogincsharp\\clientprojectsystemcsharp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{15BCB370-8451-461F-95F4-C61D2D7C96DA}|ClientProjectSystemCSharp\\ClientProjectSystemLoginCSharp.csproj|solutionrelative:clientprojectsystemcsharp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 222,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 326,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ActivityRepository.cs",
+              "DocumentMoniker": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Repositories\\ActivityRepository.cs",
+              "RelativeDocumentMoniker": "ClientProjectSystemCSharp\\Repositories\\ActivityRepository.cs",
+              "ToolTip": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Repositories\\ActivityRepository.cs",
+              "RelativeToolTip": "ClientProjectSystemCSharp\\Repositories\\ActivityRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T01:07:16.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ActivityController.cs",
+              "DocumentMoniker": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Controllers\\ActivityController.cs",
+              "RelativeDocumentMoniker": "ClientProjectSystemCSharp\\Controllers\\ActivityController.cs",
+              "ToolTip": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Controllers\\ActivityController.cs",
+              "RelativeToolTip": "ClientProjectSystemCSharp\\Controllers\\ActivityController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwAAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T01:06:33.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClientController.cs",
+              "DocumentMoniker": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Controllers\\ClientController.cs",
+              "RelativeDocumentMoniker": "ClientProjectSystemCSharp\\Controllers\\ClientController.cs",
+              "ToolTip": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Controllers\\ClientController.cs",
+              "RelativeToolTip": "ClientProjectSystemCSharp\\Controllers\\ClientController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T03:00:22.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Controllers\\ProjectController.cs",
+              "RelativeDocumentMoniker": "ClientProjectSystemCSharp\\Controllers\\ProjectController.cs",
+              "ToolTip": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Controllers\\ProjectController.cs",
+              "RelativeToolTip": "ClientProjectSystemCSharp\\Controllers\\ProjectController.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAWwEYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T02:58:13.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginService.cs",
+              "DocumentMoniker": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Services\\LoginService.cs",
+              "RelativeDocumentMoniker": "ClientProjectSystemCSharp\\Services\\LoginService.cs",
+              "ToolTip": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Services\\LoginService.cs",
+              "RelativeToolTip": "ClientProjectSystemCSharp\\Services\\LoginService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBYAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T02:40:23.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginRepository.cs",
+              "DocumentMoniker": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Repositories\\LoginRepository.cs",
+              "RelativeDocumentMoniker": "ClientProjectSystemCSharp\\Repositories\\LoginRepository.cs",
+              "ToolTip": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\Repositories\\LoginRepository.cs",
+              "RelativeToolTip": "ClientProjectSystemCSharp\\Repositories\\LoginRepository.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAgwA0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T02:37:28.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\appsettings.json",
+              "RelativeDocumentMoniker": "ClientProjectSystemCSharp\\appsettings.json",
+              "ToolTip": "C:\\Workspace\\ClientProjectSystemLoginCSharp\\ClientProjectSystemCSharp\\appsettings.json",
+              "RelativeToolTip": "ClientProjectSystemCSharp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-14T02:26:23.558Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
