@@ -1,6 +1,5 @@
 package com.system.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import com.system.config.RabbitMQConfig;
@@ -13,7 +12,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import com.system.model.Project;
-import com.system.service.ActivityService;
 import com.system.service.ProjectService;
 
 @RestController
@@ -21,8 +19,6 @@ import com.system.service.ProjectService;
 @CrossOrigin(origins = "*")
 public class ProjectController {
 
-	@Autowired
-	private ActivityService activityService;
 	@Autowired
 	private ProjectService projectService;
 	@Autowired

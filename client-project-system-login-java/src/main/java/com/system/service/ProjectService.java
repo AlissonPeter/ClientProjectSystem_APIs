@@ -20,11 +20,7 @@ public class ProjectService {
 	@Autowired
 	private ProjectRepository projectRepository;
 	@Autowired
-	private StatusService statusService;
-	@Autowired
 	private ActivityService activityService;
-	@Autowired
-	private ClientService clientService;
 
 	@Transactional(readOnly = true)
 	public Project getProjectId(Integer id) {

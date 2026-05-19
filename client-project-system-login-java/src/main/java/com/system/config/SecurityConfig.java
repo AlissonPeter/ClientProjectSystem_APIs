@@ -23,7 +23,6 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 import java.util.Arrays;
 
-import static org.springframework.security.config.Customizer.withDefaults;
 /**
  * Classe reponsável pela configuração do spring security,
  *  mostrando como se comportar e como usar os outros componentes.
