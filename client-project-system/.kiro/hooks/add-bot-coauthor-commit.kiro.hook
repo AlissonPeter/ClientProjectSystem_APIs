@@ -11,6 +11,6 @@
   },
   "then": {
     "type": "askAgent",
-    "prompt": "If the command about to be executed is a `git commit`, ensure the commit message includes the following co-author trailer. Append it to the commit message using a blank line before it:\n\nCo-authored-by: Kiro Bot <kiro-bot@users.noreply.github.com>\n\nExample: if the original command is:\n  git commit -m \"some message\"\n\nIt must become:\n  git commit -m \"some message\\n\\nCo-authored-by: Kiro Bot <kiro-bot@users.noreply.github.com>\"\n\nIf the command is NOT a git commit, do nothing and proceed normally."
+    "prompt": "If the command about to be executed is a `git commit`, ensure the commit message includes the following co-author trailer. Append it to the commit message using a blank line before it:\n\nCo-authored-by: Kiro Bot <f65df54eebd3046c49fc0f11ded6e1c88892afbb563723ea57c242169cf62a66+kiro-bot@users.noreply.github.com>\n\nThe commit message file (commit_msg.txt) must always be used to preserve proper newlines. The file content must follow this format:\n<subject line>\n\nCo-authored-by: Kiro Bot <f65df54eebd3046c49fc0f11ded6e1c88892afbb563723ea57c242169cf62a66+kiro-bot@users.noreply.github.com>\n\nIf the command is NOT a git commit, do nothing and proceed normally."
   }
 }
