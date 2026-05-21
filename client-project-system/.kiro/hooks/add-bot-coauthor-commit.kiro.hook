@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "Add Bot Co-author to Commits",
+  "description": "Ensures every git commit includes the agent bot as a co-author by appending the Co-authored-by trailer to the commit message",
+  "version": "1",
+  "when": {
+    "type": "preToolUse",
+    "toolTypes": [
+      "shell"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "If the command about to be executed is a `git commit`, ensure the commit message includes the following co-author trailer. Append it to the commit message using a blank line before it:\n\nCo-authored-by: Kiro Bot <kiro-bot@users.noreply.github.com>\n\nExample: if the original command is:\n  git commit -m \"some message\"\n\nIt must become:\n  git commit -m \"some message\\n\\nCo-authored-by: Kiro Bot <kiro-bot@users.noreply.github.com>\"\n\nIf the command is NOT a git commit, do nothing and proceed normally."
+  }
+}
