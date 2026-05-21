@@ -47,6 +47,8 @@ public class ClientController {
 		client.setName(name);
 		clientService.saveOrUpdate(client);
 	}
+
+	
 	
 	@GetMapping("/all")
 	public List<Client> findAll() {

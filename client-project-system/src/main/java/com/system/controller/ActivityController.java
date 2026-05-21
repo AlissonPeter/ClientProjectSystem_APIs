@@ -18,6 +18,4 @@ public class ActivityController {
 	public Activity getActivityById(@PathVariable Integer id) {
 		return activityService.findById(id);
 	}
-
-
 }
