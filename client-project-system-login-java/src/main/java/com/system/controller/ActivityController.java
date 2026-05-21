@@ -14,6 +14,7 @@ public class ActivityController {
 	@Autowired
 	private ActivityService activityService;
 
+	
 	@GetMapping("{id}")
 	public Activity getActivityById(@PathVariable Integer id) {
 		return activityService.findById(id);
