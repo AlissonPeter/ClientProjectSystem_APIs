@@ -48,7 +48,10 @@ public class ClientController {
 		clientService.saveOrUpdate(client);
 	}
 
-	
+	/**
+	 * Lista todos os clientes
+	 * @return
+	 */
 	@GetMapping("/all")
 	public List<Client> findAll() {
 		return clientService.findAll();
