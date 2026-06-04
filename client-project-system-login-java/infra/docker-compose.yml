@@ -1,0 +1,30 @@
+name: my_containers
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: db_clientprojectsystem
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data_nova:/var/lib/postgresql  # <-- Mudamos o nome do volume e o caminho interno aqui
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: postgres@local.com
+      PGADMIN_DEFAULT_PASSWORD: postgres
+    ports:
+      - "8080:80"
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data_nova:  # <-- Nome atualizado do volume

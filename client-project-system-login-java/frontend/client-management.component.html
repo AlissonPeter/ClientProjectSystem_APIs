@@ -1,0 +1,39 @@
+<div class="container">
+  <h3>Gestão de Clientes</h3>
+
+  <div class="form-card">
+    <h4>{{ editingClient ? 'Editar Cliente' : 'Novo Cliente' }}</h4>
+    <div class="input-group">
+      <input type="text" [(ngModel)]="newClientName" placeholder="Nome do cliente" class="form-control">
+      <button (click)="saveClient()" class="btn-save">
+        {{ editingClient ? 'Atualizar' : 'Adicionar' }}
+      </button>
+      <button *ngIf="editingClient" (click)="cancelEdit()" class="btn-cancel">Cancelar</button>
+    </div>
+  </div>
+
+  <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+
+  <table class="client-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let client of clients">
+        <td>{{ client.id }}</td>
+        <td>{{ client.name }}</td>
+        <td>
+          <button (click)="editClient(client)" class="btn-edit">Editar</button>
+          <button (click)="deleteClient(client.id!)" class="btn-delete">Excluir</button>
+        </td>
+      </tr>
+      <tr *ngIf="clients.length === 0">
+        <td colspan="3">Nenhum cliente cadastrado.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

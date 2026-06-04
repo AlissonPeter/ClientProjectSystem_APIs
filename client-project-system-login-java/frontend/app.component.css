@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: white;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1.5rem;
+}
+.btn-logout { background: transparent; color: #ff4d4d; border: 1px solid #ff4d4d; padding: 0.3rem 0.6rem; cursor: pointer; border-radius: 4px; }
