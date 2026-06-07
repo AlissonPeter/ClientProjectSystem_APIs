@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, forkJoin } from 'rxjs';
 
 export interface Client {
   id?: number;
@@ -32,5 +32,10 @@ export class ClientService {
 
   delete(id: number): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/${id}`);
+  }
+
+  deleteMultiple(ids: number[]): Observable<void[]> {
+    const requests = ids.map(id => this.delete(id));
+    return forkJoin(requests);
   }
 }

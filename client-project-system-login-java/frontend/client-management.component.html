@@ -1,39 +1,86 @@
-<div class="container">
-  <h3>Gestão de Clientes</h3>
+<div class="container-wrapper">
+  <div class="container">
+    <div class="header-section">
+      <h3>Gestão de Clientes</h3>
+      <p class="subtitle">Adicione, edite ou remova clientes do sistema.</p>
+    </div>
 
-  <div class="form-card">
-    <h4>{{ editingClient ? 'Editar Cliente' : 'Novo Cliente' }}</h4>
-    <div class="input-group">
-      <input type="text" [(ngModel)]="newClientName" placeholder="Nome do cliente" class="form-control">
-      <button (click)="saveClient()" class="btn-save">
-        {{ editingClient ? 'Atualizar' : 'Adicionar' }}
+    <div class="form-card">
+      <div class="card-header">
+        <h4>{{ editingClient ? 'Editar Cliente' : 'Novo Cliente' }}</h4>
+      </div>
+      <div class="card-body">
+        <div class="input-group">
+          <input type="text" [(ngModel)]="newClientName" placeholder="Digite o nome do cliente" class="form-control">
+          <div class="action-buttons">
+            <button (click)="saveClient()" class="btn-save">
+              {{ editingClient ? 'Salvar Alterações' : 'Adicionar Cliente' }}
+            </button>
+            <button *ngIf="editingClient" (click)="cancelEdit()" class="btn-cancel">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+    <div *ngIf="selectedClientIds.size > 0" class="batch-actions-bar">
+      <div class="batch-info">
+        <span class="badge-count">{{ selectedClientIds.size }}</span>
+        <span>{{ selectedClientIds.size === 1 ? 'cliente selecionado' : 'clientes selecionados' }}</span>
+      </div>
+      <button (click)="deleteSelected()" class="btn-batch-delete">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg>
+        Excluir Selecionados
       </button>
-      <button *ngIf="editingClient" (click)="cancelEdit()" class="btn-cancel">Cancelar</button>
+    </div>
+
+    <div class="table-card">
+      <table class="client-table">
+        <thead>
+          <tr>
+            <th class="col-id">ID</th>
+            <th class="col-name">Nome</th>
+            <th class="col-actions">Ações</th>
+            <th class="col-select">
+              <div class="checkbox-container" title="Selecionar todos">
+                <input type="checkbox" (change)="toggleSelectAll($event)" [checked]="areAllSelected()">
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let client of clients" [class.selected]="isClientSelected(client.id!)">
+            <td class="col-id"><span class="badge-id">#{{ client.id }}</span></td>
+            <td class="col-name">{{ client.name }}</td>
+            <td class="col-actions">
+              <div class="actions-wrapper">
+                <button (click)="editClient(client)" class="btn-edit" title="Editar cliente">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                  Editar
+                </button>
+                <button (click)="deleteClient(client.id!)" class="btn-delete" title="Excluir cliente">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg>
+                  Excluir
+                </button>
+              </div>
+            </td>
+            <td class="col-select">
+              <div class="checkbox-container">
+                <input type="checkbox" [checked]="isClientSelected(client.id!)" (change)="toggleSelect(client.id!)">
+              </div>
+            </td>
+          </tr>
+          <tr *ngIf="clients.length === 0">
+            <td colspan="4" class="empty-state">
+              <div class="empty-content">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="empty-icon"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" x2="19" y1="8" y2="14"/><line x1="22" x2="16" y1="11" y2="11"/></svg>
+                <p>Nenhum cliente cadastrado ainda.</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
-
-  <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
-
-  <table class="client-table">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Nome</th>
-        <th>Ações</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let client of clients">
-        <td>{{ client.id }}</td>
-        <td>{{ client.name }}</td>
-        <td>
-          <button (click)="editClient(client)" class="btn-edit">Editar</button>
-          <button (click)="deleteClient(client.id!)" class="btn-delete">Excluir</button>
-        </td>
-      </tr>
-      <tr *ngIf="clients.length === 0">
-        <td colspan="3">Nenhum cliente cadastrado.</td>
-      </tr>
-    </tbody>
-  </table>
 </div>

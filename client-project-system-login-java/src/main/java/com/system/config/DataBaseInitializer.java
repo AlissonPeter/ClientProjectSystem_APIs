@@ -22,20 +22,16 @@ public class DataBaseInitializer {
     @Bean
     public CommandLineRunner initDatabase() {
         return args -> {
-            // Verifica se o usuário 'admin' já existe
-            if (loginRepository.findByUsername("alisson").isEmpty()) {
-                System.out.println("Criando usuário administrador padrão...");
+            // Garante que o usuário administrador 'alisson' exista e tenha a senha correta configurada
+            var userOpt = loginRepository.findByUsername("alisson");
+            Login adminLogin = userOpt.orElseGet(Login::new);
+            
+            System.out.println("Garantindo configuração do usuário administrador 'alisson'...");
+            adminLogin.setUsername("alisson");
+            adminLogin.setPassword(passwordEncoder.encode("alisson123"));
+            adminLogin.setRole("ADMIN");
 
-                // Cria a entidade de usuário
-                Login adminLogin = new Login();
-                adminLogin.setUsername("alisson");
-                // Criptografa a senha antes de salvar
-                adminLogin.setPassword(passwordEncoder.encode("alisson123"));
-                adminLogin.setRole("ADMIN");
-
-                // Salva o usuário no banco de dados
-                loginRepository.save(adminLogin);
-            }
+            loginRepository.save(adminLogin);
         };
     }
 }

@@ -1,7 +1,7 @@
 <nav *ngIf="authService.getToken()" class="navbar">
   <div class="nav-brand">Project System</div>
   <div class="nav-links">
-    <a routerLink="/clients">Clientes</a>
+    <a routerLink="/clients" routerLinkActive="active">Clientes</a>
     <button (click)="authService.logout()" routerLink="/login" class="btn-logout">Sair</button>
   </div>
 </nav>

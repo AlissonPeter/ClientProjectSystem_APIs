@@ -62,7 +62,60 @@ export class ClientManagementComponent implements OnInit {
   deleteClient(id: number) {
     if (confirm('Deseja realmente excluir este cliente?')) {
       this.clientService.delete(id).subscribe({
-        next: () => this.loadClients()
+        next: () => {
+          this.selectedClientIds.delete(id);
+          this.loadClients();
+        }
+      });
+    }
+  }
+
+  // Lógica para seleção múltipla
+  selectedClientIds: Set<number> = new Set();
+
+  toggleSelect(clientId: number) {
+    if (this.selectedClientIds.has(clientId)) {
+      this.selectedClientIds.delete(clientId);
+    } else {
+      this.selectedClientIds.add(clientId);
+    }
+  }
+
+  isClientSelected(clientId: number): boolean {
+    return this.selectedClientIds.has(clientId);
+  }
+
+  toggleSelectAll(event: any) {
+    const checked = event.target.checked;
+    if (checked) {
+      this.clients.forEach(c => {
+        if (c.id) this.selectedClientIds.add(c.id);
+      });
+    } else {
+      this.selectedClientIds.clear();
+    }
+  }
+
+  areAllSelected(): boolean {
+    if (this.clients.length === 0) return false;
+    return this.clients.every(c => c.id && this.selectedClientIds.has(c.id));
+  }
+
+  deleteSelected() {
+    const idsToDelete = Array.from(this.selectedClientIds);
+    if (idsToDelete.length === 0) return;
+
+    if (confirm(`Deseja realmente excluir os ${idsToDelete.length} clientes selecionados?`)) {
+      this.clientService.deleteMultiple(idsToDelete).subscribe({
+        next: () => {
+          this.selectedClientIds.clear();
+          this.loadClients();
+        },
+        error: (err) => {
+          this.errorMessage = 'Erro ao excluir alguns clientes.';
+          console.error(err);
+          this.loadClients();
+        }
       });
     }
   }

@@ -42,9 +42,8 @@ public class SecurityConfig {
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
 
-        // Permite o seu frontend rodando em localhost:4200.
-        // Se o frontend estiver em outra porta, mude o valor abaixo.
-        configuration.setAllowedOrigins(Arrays.asList("http://localhost:4200"));
+        // Permite o seu frontend rodando em localhost:4200 ou 127.0.0.1:4200
+        configuration.setAllowedOrigins(Arrays.asList("http://localhost:4200", "http://127.0.0.1:4200"));
 
         // Permite os métodos essenciais para o REST
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
